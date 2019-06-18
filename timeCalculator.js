@@ -1,12 +1,10 @@
-var dateTime = new Date(); // Date Object to read time at start up 
-const moment = require('moment');
-const prompts = require('prompts'); // Prompt object from module
+const moment = require('moment'); // Moment object 
+const prompts = require('prompts'); // Prompt object
 
 getTime(); // Get input from user
 
 // Prompts the user, asking them to input a time. Passes response and time at start up to timeLeft
 async function getTime() {
-
   (async () => {
     const response = await prompts({ // Generates a response variable from the prompt specified
       type: 'number', // Type of the response 
@@ -22,8 +20,8 @@ async function getTime() {
 // First checks if time entered by user is valid, then calculates difference bettwen time enterend and 
 // time at the start of the program
 function timeLeft(timeInput, startHours, startMinutes) {
-  let cTime = moment().format("h:mm:ss"); 
-  let tleft = moment(timeInput, "hh:mm:ss").fromNow(); 
+  let cTime = moment().format("h:mm:ss"); // Current time
+  let tleft = moment(timeInput, "hh:mm:ss").fromNow(); // Time until input time
 
   console.log("Time at Start of Program: " + cTime); // Display time at start up to console
   console.log("Time Until Specified Time: " + tleft); // Display time until input time to console
