@@ -4,12 +4,13 @@ const startHour = dateTime.getHours(); // Get start up hours from objet
 const startMinute = dateTime.getMinutes(); // Get start up minutes from object
 const startSecond = dateTime.getSeconds(); // Get start up seconds from object 
 
-const prompts = require('prompts'); // Prompt object from module
-
-getTime(startHour, startMinute, startSecond, prompt); // Get input from user
+getTime(startHour, startMinute, startSecond); // Get input from user
 
 // Prompts the user, asking them to input a time. Passes response and time at start up to timeLeft
-async function getTime(ch, cm, cs, prompt) {
+async function getTime(ch, cm, cs) {
+  
+  const prompts = require('prompts'); // Prompt object from module
+
   (async () => {
     const response = await prompts({ // Generates a response variable from the prompt specified
       type: 'number', // Type of the response 
