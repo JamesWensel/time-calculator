@@ -19,12 +19,10 @@ async function getTime() {
 
 // First checks if time entered by user is valid, then calculates difference bettwen time enterend and 
 // time at the start of the program
-function timeLeft(timeInput, startHours, startMinutes) {
-  let cTime = moment().format("h:mm:ss"); // Current time
-  let tleft = moment(timeInput, "hh:mm:ss").fromNow(); // Time until input time
+function timeLeft(timeInput) {
+  let currentTime = moment().format("h:mm:ss"); // Current time
+  let timeLeft = moment(timeInput, "hh:mm:ss").fromNow(); // Time until input time
 
-  console.log("Time at Start of Program: " + cTime); // Display time at start up to console
-  console.log("Time Until Specified Time: " + tleft); // Display time until input time to console
+  console.log("Time at Start of Program: " + currentTime); // Display time at start up to console
+  console.log("Specified time " + timeLeft); // Display time until input time to console
 }
-
-

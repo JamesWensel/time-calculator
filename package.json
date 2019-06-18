@@ -1,0 +1,26 @@
+{
+  "name": "timecalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "timeCalculator.js",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "prompts": "^2.1.0",
+    "moments": "^0.0.2",
+    "v1": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesWensel/timeCalculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesWensel/timeCalculator/issues"
+  },
+  "homepage": "https://github.com/JamesWensel/timeCalculator#readme"
+}
