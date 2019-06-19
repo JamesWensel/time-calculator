@@ -25,4 +25,6 @@ function timeLeft(timeInput) {
 
   console.log("Time at Start of Program: " + currentTime); // Display time at start up to console
   console.log("Specified time " + timeLeft); // Display time until input time to console
+  
+
 }

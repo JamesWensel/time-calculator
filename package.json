@@ -4,7 +4,7 @@
   "description": "",
   "main": "timeCalculator.js",
   "dependencies": {
-    "moment": "^2.24.0",
+    "moment": "^1.0.0",
     "prompts": "^2.1.0"
   },
   "devDependencies": {},
